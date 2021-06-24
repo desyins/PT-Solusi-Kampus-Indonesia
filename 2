@@ -1,0 +1,1 @@
+SELECT tb_mahasiswa.mhs_nama AS 'Nama Mahasiswa', AVG(tb_mahasiswa_nilai) AS 'Rata - Rata' FROM tb_mahasiswa AS M JOIN tb_mahasiswa_nilai AS MN ON M.mhs_id = MN.mhs_id JOIN tb_matakuliah AS MK ON MN.mk_id = MK.mk_id WHERE MN.mk_id = 2 GROUP BY MN.mhs_id LIMIT 1;
